@@ -9,7 +9,7 @@ LUAC_FILES = $(patsubst %.moon, %.lua, $(MOONSCRIPT_FILES))
 
 # to ensure that everything is rebuilt if Lua sources or data files change
 LUA_FILES = $(shell find src -name '*.lua')
-DATA_FILES = $(shell find data)
+DATA_FILES = $(shell find data 2>/dev/null)
 RES_FILES = $(shell find res 2>/dev/null)
 
 # output name
