@@ -1,0 +1,5 @@
+{
+	"name": "MODULENAME",
+	"version": "0.0.1",
+	"entrypoint": "./init.lua"
+}
